@@ -4,22 +4,49 @@ $tertiary-color: #babd8d;
 $primary-tex-color: #7c6a0a;
 
 $font-stack: "IBM Plex Sans", sans-serif;
-
-body {
+/*Estilos generales*/
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: $primary-color;
+  font-family: $font-stack;
+}
+
 header {
   width: 100%;
 }
 nav {
+  display: flex;
+  padding: 15px;
   width: 100%;
-  height: 100px;
+  justify-content: space-between;
+  color: $primary-tex-color;
+  p {
+    font-size: 2.4rem;
+    padding: 30px;
+  }
+  .icons {
+    display: flex;
+    gap: 15px;
+    button {
+      background: none;
+      border-style: none;
+      svg {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
 }
-main {
-  background-color: $primary-color;
-}
+
 footer {
   $background: #fa9500;
   background-color: $background;
